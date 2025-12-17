@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chicken Wala | Fresh & Premium Chicken</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>Chicken Wala</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#cart">Cart</a>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h2>Fresh & Hygienic Chicken</h2>
+    <p>
+      Chicken Wala delivers premium quality, fresh and clean chicken cuts.
+      Trusted by homes, hotels, and restaurants.
+    </p>
+    <button onclick="orderNow()">Order on WhatsApp</button>
+  </div>
+  <div class="hero-image">
+    <img src="chicken-main.jpg" alt="Fresh Chicken">
+  </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section id="products">
+  <h2 class="section-title">Our Products</h2>
+
+  <div class="products">
+    <div class="card">
+      <img src="wholechicken.jpg">
+      <h3>Whole Chicken</h3>
+      <p>₹220 / kg</p>
+      <button onclick="addToCart('Whole Chicken', 220)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="skinless.jpg">
+      <h3>Skinless Chicken</h3>
+      <p>₹260 / kg</p>
+      <button onclick="addToCart('Skinless Chicken', 260)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="boneless.jpg">
+      <h3>Boneless Chicken</h3>
+      <p>₹320 / kg</p>
+      <button onclick="addToCart('Boneless Chicken', 320)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="legpiece.jpg">
+      <h3>Leg Piece</h3>
+      <p>₹280 / kg</p>
+      <button onclick="addToCart('Leg Piece', 280)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- CART SECTION -->
+<section id="cart" class="info-section">
+  <h2 class="section-title">Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <h3 id="total-price">Total: ₹0</h3>
+  <button onclick="checkout()">Checkout on WhatsApp</button>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="info-section">
+  <h2 class="section-title">About Chicken Wala</h2>
+  <p>
+    Chicken Wala is committed to delivering fresh, hygienic, and high-quality
+    chicken products. We follow strict cleanliness standards to ensure customer
+    satisfaction and premium taste.
+  </p>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="info-section">
+  <h2 class="section-title">Contact Us</h2>
+  <p><strong>Phone:</strong> +91 6300557844</p>
+  <p><strong>WhatsApp Orders:</strong> Available</p>
+  <p><strong>Location:</strong> Madanapalle</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Chicken Wala. All Rights Reserved.</p>
+</footer>
+
+<!-- LINK JS -->
+<script src="script.js"></script>
+</body>
+</html>
